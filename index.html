@@ -10,7 +10,97 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      
+      <div class="container text-center">
+        <h3>Tính tiền lương nhân viên</h3>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="number" name="oneDaySalary" id="oneDaySalary" class="form-control" placeholder="Lương 1 ngày làm" value="100000" disabled >
+        </div>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="number" name="workingDay" id="workingDay" class="form-control" placeholder="số ngày làm" >
+        </div>
+        <button id="totalSalary">Tổng lương</button>
+        <div id="salary"></div>
+      </div>
+      <br>
+      <br>
+      <div class="container text-center">
+        <h3>Tính giá trị trung bình</h3>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="number" name="soThucMot" id="soThucMot" class="form-control" placeholder="số thực thứ 1" >
+        </div>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="number" name="soThucHai" id="soThucHai" class="form-control" placeholder="số thực thứ 2" >
+        </div>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="number" name="soThucBa" id="soThucBa" class="form-control" placeholder="số thực số 3" >
+        </div>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="number" name="soThucBon" id="soThucBon" class="form-control" placeholder="số thực số 4" >
+        </div>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="number" name="soThucNam" id="soThucNam" class="form-control" placeholder="số thực số 5" >
+        </div>
+        <button id="giaTriTrungBinh">Giá trị trung bình</button>
+        <div id="trungBinh"></div>
+      </div>
+      <br>
+      <br>
+      <div class="container text-center">
+        <h3>Quy đổi tiền</h3>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="number" name="USD" id="USD" class="form-control" placeholder="số tiền USD " >
+        </div>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="text" name="VND" id="VND" class="form-control" placeholder="23.500 VND "   disabled>
+        </div>
+        <button id="btn-exchange">Số tiền sau quy đổi</button>
+        <div id="exchange"></div>
+      </div>
+      <br>
+      <div class="container text-center">
+        <h3>Tính diện tích và chu vi hình chữ nhật </h3>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="number" name="chieuDai" id="chieuDai" class="form-control" placeholder="chiều dài hình chữ nhật" >
+        </div>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="number" name="chieuRong" id="chieuRong" class="form-control" placeholder="chiều rộng hình chữ nhật ">
+        </div>
+        <div id="dienTich" style="text-align: left;">
+        <p >Diện tích hình chữ nhật : </p>
+        </div>
+        <div id="chuVi" style="text-align: left;" >
+          <p >Chu vi hình chữ nhật : </p>
+        </div>
+        <button id="btn-count">Tính</button>
+        
+
+      <br>
+      <div class="container text-center">
+        <h3>Tính tổng 2 ký số </h3>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="number" name="kySo" id="kySo" class="form-control" placeholder="ký số "  >
+        </div>
+        
+        
+        <div id="dienTich" style="text-align: left;">
+        <p >Tổng 2 ký số  : </p>
+        </div>
+        <button id="tong">Tổng </button>
+        <div id="tongHaiSo">tổng hai số </div>
+        
+      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
